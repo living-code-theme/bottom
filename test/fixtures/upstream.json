@@ -1,0 +1,54 @@
+{
+  "repository": "clementtsang/bottom",
+  "revision": "7d65d62c8310f592727e6a142007f761504c2c8b",
+  "paths": [
+    "tests/valid_configs/all_styling_color.toml",
+    "src/options/config/style.rs"
+  ],
+  "checked": "2026-10-21",
+  "contract": "toml",
+  "sections": {
+    "cpu": [
+      "all_entry_color",
+      "avg_entry_color",
+      "cpu_core_colors"
+    ],
+    "temp_graph": [
+      "temp_graph_color_styles"
+    ],
+    "memory": [
+      "ram_color",
+      "cache_color",
+      "swap_color",
+      "arc_color",
+      "gpu_colors"
+    ],
+    "network": [
+      "rx_color",
+      "tx_color",
+      "rx_total_color",
+      "tx_total_color"
+    ],
+    "battery": [
+      "high_battery_color",
+      "medium_battery_color",
+      "low_battery_color"
+    ],
+    "tables": [
+      "headers"
+    ],
+    "graphs": [
+      "graph_color",
+      "legend_text"
+    ],
+    "widgets": [
+      "border_color",
+      "selected_border_color",
+      "widget_title",
+      "text",
+      "selected_text",
+      "disabled_text",
+      "bg_color"
+    ]
+  }
+}

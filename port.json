@@ -1,0 +1,28 @@
+{
+  "$schema": "https://living-code.dev/port.schema.json",
+  "schemaVersion": 1,
+  "name": "bottom",
+  "slug": "bottom",
+  "group": "CLI & TUI",
+  "emoji": "📊",
+  "description": "Living Code for bottom: native TOML styles for CPU, memory, network, batteries, graphs, tables and selected widgets.",
+  "homepage": "https://github.com/ClementTsang/bottom",
+  "quick": "Install the native theme files",
+  "aliases": [
+    "btm",
+    "system monitor"
+  ],
+  "flavors": [
+    "night",
+    "frost",
+    "paper",
+    "signal"
+  ],
+  "files": [
+    "themes/living-code-night.toml",
+    "themes/living-code-frost.toml",
+    "themes/living-code-paper.toml",
+    "themes/living-code-signal.toml"
+  ],
+  "images": []
+}
