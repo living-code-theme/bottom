@@ -7,20 +7,40 @@
 
 ## Previews
 
-Real application screenshots have not been captured yet.
+<table data-lc-flavors>
+<tr>
+<td width="50%" valign="top">
+<strong>Night</strong><br><sub>Dark · full palette</sub><br><br>
+<a href="images/night.png"><img src="images/night.png" alt="bottom running Living Code Night" width="640"></a>
+</td>
+<td width="50%" valign="top">
+<strong>Frost</strong><br><sub>Dark · softer chroma</sub><br><br>
+<a href="images/frost.png"><img src="images/frost.png" alt="bottom running Living Code Frost" width="640"></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<strong>Paper</strong><br><sub>Light · near-white slate</sub><br><br>
+<a href="images/paper.png"><img src="images/paper.png" alt="bottom running Living Code Paper" width="640"></a>
+</td>
+<td width="50%" valign="top">
+<strong>Signal</strong><br><sub>Dark · teal accent</sub><br><br>
+<a href="images/signal.png"><img src="images/signal.png" alt="bottom running Living Code Signal" width="640"></a>
+</td>
+</tr>
+</table>
+
+Select any preview to view the image at full size.
 
 ## Installation
 
 ```sh
-git clone https://github.com/living-code-theme/bottom.git
-cd bottom
+flavor=night # night, frost, paper, or signal
+curl -fsSL --create-dirs -o "${XDG_CONFIG_HOME:-$HOME/.config}/bottom/themes/living-code-$flavor.toml" "https://raw.githubusercontent.com/living-code-theme/bottom/main/themes/living-code-$flavor.toml"
+btm --config "${XDG_CONFIG_HOME:-$HOME/.config}/bottom/themes/living-code-$flavor.toml"
 ```
 
-```sh
-btm --config "$PWD/themes/living-code-night.toml"
-```
-
-To retain your existing monitor layout and process settings, merge the selected file’s `[styles]` tables into your normal `bottom.toml` instead of replacing the whole file.
+This leaves your normal `bottom.toml` untouched. To retain its monitor layout and process settings, merge the downloaded file’s `[styles]` tables into that config instead. Remove duplicate style tables and do not pass a built-in `--color` override.
 
 ## Flavors
 
@@ -29,10 +49,10 @@ Expand a flavor for its full-size preview and activation instructions.
 <details data-lc-flavor="night">
 <summary><strong>Night</strong> · Dark · full palette</summary>
 
-A real application capture is not available yet.
+<p><a href="images/night.png"><img src="images/night.png" alt="bottom running Living Code Night" width="1280"></a></p>
 
 ```sh
-btm --config "$PWD/themes/living-code-night.toml"
+btm --config "${XDG_CONFIG_HOME:-$HOME/.config}/bottom/themes/living-code-night.toml"
 ```
 
 </details>
@@ -40,10 +60,10 @@ btm --config "$PWD/themes/living-code-night.toml"
 <details data-lc-flavor="frost">
 <summary><strong>Frost</strong> · Dark · softer chroma</summary>
 
-A real application capture is not available yet.
+<p><a href="images/frost.png"><img src="images/frost.png" alt="bottom running Living Code Frost" width="1280"></a></p>
 
 ```sh
-btm --config "$PWD/themes/living-code-frost.toml"
+btm --config "${XDG_CONFIG_HOME:-$HOME/.config}/bottom/themes/living-code-frost.toml"
 ```
 
 </details>
@@ -51,10 +71,10 @@ btm --config "$PWD/themes/living-code-frost.toml"
 <details data-lc-flavor="paper">
 <summary><strong>Paper</strong> · Light · near-white slate</summary>
 
-A real application capture is not available yet.
+<p><a href="images/paper.png"><img src="images/paper.png" alt="bottom running Living Code Paper" width="1280"></a></p>
 
 ```sh
-btm --config "$PWD/themes/living-code-paper.toml"
+btm --config "${XDG_CONFIG_HOME:-$HOME/.config}/bottom/themes/living-code-paper.toml"
 ```
 
 </details>
@@ -62,10 +82,10 @@ btm --config "$PWD/themes/living-code-paper.toml"
 <details data-lc-flavor="signal">
 <summary><strong>Signal</strong> · Dark · teal accent</summary>
 
-A real application capture is not available yet.
+<p><a href="images/signal.png"><img src="images/signal.png" alt="bottom running Living Code Signal" width="1280"></a></p>
 
 ```sh
-btm --config "$PWD/themes/living-code-signal.toml"
+btm --config "${XDG_CONFIG_HOME:-$HOME/.config}/bottom/themes/living-code-signal.toml"
 ```
 
 </details>
@@ -76,7 +96,9 @@ The file contains only `[styles]` and its child tables. Remove existing duplicat
 
 ## Compatibility
 
-Targets bottom’s current `[styles]` format, verified against its complete upstream valid-style fixture. Older releases using different styling keys are not claimed. Truecolor is recommended. Tests parse TOML, check section/field names against the fixture and verify foreground/selection contrast; they do not claim a real application screenshot.
+Targets bottom’s current `[styles]` format, verified against its complete upstream valid-style fixture. Older releases using different styling keys are not claimed. Truecolor is recommended. Tests parse TOML, check section/field names against the fixture and verify foreground/selection contrast; the native application is also captured automatically.
+
+Previews are captured programmatically from the actual application in an isolated profile. See [`capture/app.py`](capture/app.py) for the app-owned recipe and [`images/capture.json`](images/capture.json) for runtime, palette and image provenance. No mock interface is drawn.
 
 ## Contributing
 

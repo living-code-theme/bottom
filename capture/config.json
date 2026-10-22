@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "scene": "bottom native monitor. Metrics reflect the disposable capture machine.",
+  "versionCommand": [
+    "btm",
+    "--version"
+  ],
+  "fixtures": []
+}
