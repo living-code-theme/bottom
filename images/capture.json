@@ -5,10 +5,10 @@
     "capture/app.py": "5b0a4dad9e07e284d0e793676f1b98f6fd2685c0bc8cabd4d260a0f7fbce0dda",
     "capture/config.json": "c4b39e99786fae109685e4ecb8849ea166e866473c10423fd6e03a9310c08a3f",
     "capture/flake.lock": "e3750f7ba25d0b1971722cdd83b2f07e32528980a4d6a9a1ea55177747de5752",
-    "capture/flake.nix": "6a57ecd8f632f646b553d40d55d1130c7ed8215464418b44518a84b586250a51",
+    "capture/flake.nix": "fbec64cacd057e93a728dfec0b54614e21b9b49bdc08c667db5ba8e88e91761d",
     "palette/theme.json": "d735cf005e3b2807953226c0119e384f6f8a3d2b3167443371cb302a8c689cdb",
     "port.json": "c3a01347359566334dabe883057425002358f9d5d155a8cc051eb9437cdcba1b",
-    "scripts/capture.py": "6830da447e48a4ab5511012b5222763677214e8a98683b94c60248765202ca9f",
+    "scripts/capture.py": "dcb8dc5d8a6ecbf2eb998eab90d678c745c9de6e9d35ded82edc0a949cb7e4e8",
     "themes/living-code-frost.toml": "d7b368af290456b564628ea501ca2f2fbda6fd97218329d8a8b98949ca5dd190",
     "themes/living-code-night.toml": "f98337bd5911740656babf19c4dd6378f6f28e703b9620493246ac070c08cd6e",
     "themes/living-code-paper.toml": "d47df808699a89f8a52fded2a40d48fed4e1c4473ef277d524becd0387c0c99c",
@@ -17,7 +17,7 @@
   "images": {
     "night": {
       "path": "images/night.png",
-      "sha256": "1ee4ef1035311f3aef7ae7914b10cd441da06ec62e7bf06fc9b266e510a24bb6",
+      "sha256": "91b810193c1d37cb45f770e2e9f19b122d5451028a6000cefab7f3f293487c66",
       "application": "bottom 0.14.9",
       "paletteColors": [
         "#00a692",
@@ -34,7 +34,7 @@
     },
     "frost": {
       "path": "images/frost.png",
-      "sha256": "5c0ce0e7c969f6736aa227a3bbfd71df95211e23c3031ec76f75badea9128f9b",
+      "sha256": "13730220cb8ffd0ba5492d9d76c34569b73f986ca45cb900ed79acf299c64f11",
       "application": "bottom 0.14.9",
       "paletteColors": [
         "#0a1016",
@@ -45,14 +45,13 @@
         "#a2cb9d",
         "#bc9ec6",
         "#c8cfd4",
-        "#d49c80",
         "#e2e9ee",
         "#e9c897"
       ]
     },
     "paper": {
       "path": "images/paper.png",
-      "sha256": "dc37e338a7c680168f8b32560ec96fcf071401487a487c7450e967834b205230",
+      "sha256": "60aa718649a47d1cd4648c2c31f9e6390cad59b059de38217e4fbf8a22091909",
       "application": "bottom 0.14.9",
       "paletteColors": [
         "#12171a",
@@ -70,7 +69,7 @@
     },
     "signal": {
       "path": "images/signal.png",
-      "sha256": "8d20286d9688b675c7339f74d6a7cc48a2d7f63ccc818c5bf76a8002c3ee1fd5",
+      "sha256": "99cb172beb7cbaf212159fbb7cdd095c06651c887de500e46d66e2da6420d894",
       "application": "bottom 0.14.9",
       "paletteColors": [
         "#00a692",
